@@ -8,7 +8,7 @@ const jumpHeight = 70;
 let jumping = false;
 let gameSpeed = 100;
 let isGameOver = false;
-
+alert("start");
 function checkCollisionsGlobal() {
     if (!jumping && !isGameOver) {
       checkCollision();
