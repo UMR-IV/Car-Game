@@ -2,14 +2,6 @@ const dinosaur = document.getElementById("dinosaur");
 const gameContainer = document.getElementById("game-container");
 const adsContainer = document.getElementById("ads-container");
 const adsContainer2 = document.getElementById("ads-container2");
-const GO = document.createElement("h1");
-
-const CM = document.createElement("h1");
-const CM2 = document.createElement("h1");
-CM.innerText = "Ads";
-CM2.innerText = "Ads2";
-adsContainer.appendChild(CM);
-adsContainer2.appendChild(CM2);
 
 const jumpHeight = 120;
 
@@ -124,6 +116,7 @@ function createObstacle() {
   
   function showBoomImage(x, y) {
     const boomImage = document.createElement("img");
+    const GO = document.createElement("h1");
     boomImage.src = "bakuhatsu.png"; // Path to your boom image
     GO.innerText = "Game Over";
     boomImage.style.position = "absolute";
