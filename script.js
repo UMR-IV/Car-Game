@@ -3,21 +3,11 @@ const gameContainer = document.getElementById("game-container");
 const adsContainer = document.getElementById("ads-container");
 const adsContainer2 = document.getElementById("ads-container2");
 
-const jumpHeight = 120;
+const jumpHeight = 70;
 
 let jumping = false;
 let gameSpeed = 100;
 let isGameOver = false;
-
-GO.innerText = "Press 'space' to jump";
-GO.style.position = "absolute";
-GO.style.left = (370) + "px";
-GO.style.top = (100) + "px";
-gameContainer.appendChild(GO);
-
-setTimeout(() => {
-  GO.innerText = "";
-}, 3000);
 
 function checkCollisionsGlobal() {
     if (!jumping && !isGameOver) {
