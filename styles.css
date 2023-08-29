@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #404040;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Ensure obstacles are hidden when out of bounds */
+    background-image: url('ezgif-1-d10e51df51.gif');
+    background-size: cover; /* Adjust as needed */
+  }
+
+  #ads-container {
+    position: relative;
+    width: 200px;
+    height: 700px;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Ensure obstacles are hidden when out of bounds */
+    background-image: url('ezgif-1-d10e51df51.gif');
+    background-size: cover; /* Adjust as needed */
+  }
+  
+  #ads-container2 {
+    position: relative;
+    width: 200px;
+    height: 700px;
+    border: 1px solid #ccc;
+    overflow: hidden; /* Ensure obstacles are hidden when out of bounds */
+    background-image: url('ezgif-1-d10e51df51.gif');
+    background-size: cover; /* Adjust as needed */
+  }
+
+  #dinosaur {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    width: 120px;
+    height: 60px;
+  }
+  
+  .obstacle {
+    position: absolute;
+    bottom: 10px;
+    width: 120px;
+    height: 60px;
+  }
+
+  img{
+    bottom: 70px;
+    width: 240px;
+    height: 240px;
+  }
+
+  h1{
+    color: aliceblue;
+  }
