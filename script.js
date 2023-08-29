@@ -12,7 +12,7 @@ let isGameOver = false;
 const score = document.createElement("h1");
 var score_ = 0;
 
-score.innerText = score_;
+score.innerText = "Score: " + score_;
 score.style.position = "absolute";
 score.style.left = "0px";
 score.style.top = "0px";
@@ -20,7 +20,7 @@ gameContainer.appendChild(score);
 
 function updateScore() {
   score_ += 1;
-  score.innerText = score_;
+  score.innerText = "Score: "score_;
 }
 
 const GO = document.createElement("h1");
