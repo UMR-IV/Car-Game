@@ -8,6 +8,18 @@ const jumpHeight = 70;
 let jumping = false;
 let gameSpeed = 100;
 let isGameOver = false;
+
+const GO = document.createElement("h1");
+GO.innerText = "Press 'space' to jump";
+GO.style.position = "absolute";
+GO.style.left = (370) + "px";
+GO.style.top = (100) + "px";
+gameContainer.appendChild(GO);
+
+setTimeout(() => {
+  GO.innerText = "";
+}, 3000);
+
 function checkCollisionsGlobal() {
     if (!jumping && !isGameOver) {
       checkCollision();
@@ -105,7 +117,6 @@ function createObstacle() {
   
   function showBoomImage(x, y) {
     const boomImage = document.createElement("img");
-    const GO = document.createElement("h1");
     boomImage.src = "bakuhatsu.png"; // Path to your boom image
     GO.innerText = "Game Over";
     boomImage.style.position = "absolute";
