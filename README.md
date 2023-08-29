@@ -1,2 +1,2 @@
 # Car-Game
-simple web game
+A very simple web game
