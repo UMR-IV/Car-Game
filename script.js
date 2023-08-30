@@ -20,7 +20,7 @@ gameContainer.appendChild(score);
 
 function updateScore() {
   score_ += 1;
-  score.innerText = "Score: "score_;
+  score.innerText = "Score: " + score_;
 }
 
 const GO = document.createElement("h1");
